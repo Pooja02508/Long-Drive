@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.RequestHistoryFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All your previous requests will be shown\n here within 24 hours"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

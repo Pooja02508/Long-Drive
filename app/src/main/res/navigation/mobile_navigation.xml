@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_city">
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_home"-->
+    <!--        android:name="longdrive.com.fragments.HomeFragment"-->
+    <!--        android:label="@string/menu_home"-->
+    <!--        tools:layout="@layout/fragment_home" />-->
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="longdrive.com.fragments.ProfileFragment"
+        android:label="User Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_city"
+        android:name="longdrive.com.fragments.CityFragment"
+        android:label="City"
+        tools:layout="@layout/fragment_city" />
+    <fragment
+        android:id="@+id/nav_requestHistory"
+        android:name="longdrive.com.fragments.RequestHistoryFragment"
+        android:label="Request History"
+        tools:layout="@layout/fragment_request_history" />
+    <fragment
+        android:id="@+id/nav_outstation"
+        android:name="longdrive.com.fragments.OutstationFragment"
+        android:label="Outstation"
+        tools:layout="@layout/fragment_outstation" />
+    <fragment
+        android:id="@+id/nav_freight"
+        android:name="longdrive.com.fragments.FreightFragment"
+        android:label="Freight"
+        tools:layout="@layout/fragment_freight" />
+    <fragment
+        android:id="@+id/nav_safety"
+        android:name="longdrive.com.fragments.SafetyFragment"
+        android:label="Safety"
+        tools:layout="@layout/fragment_safety" />
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="longdrive.com.fragments.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_faq"
+        android:name="longdrive.com.fragments.FAQFragment"
+        android:label="FAQ"
+        tools:layout="@layout/fragment_faq" />
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="longdrive.com.fragments.SupportFragment"
+        android:label="Support"
+        tools:layout="@layout/fragment_support" />
+
+
+
+    <fragment
+        android:id="@+id/bottom_rideRequest"
+        android:name="longdrive.com.driver_mode.fragmentsDriver.RideRequestFragment"
+        android:label="Ride Request"
+        tools:layout="@layout/fragment_ride_request"/>
+
+    <fragment
+        android:id="@+id/bottom_myIncome"
+        android:name="longdrive.com.driver_mode.fragmentsDriver.MyIncomeFragment"
+        android:label="My Income"
+        tools:layout="@layout/fragment_my_income"/>
+
+    <fragment
+        android:id="@+id/bottom_rating"
+        android:name="longdrive.com.driver_mode.fragmentsDriver.RatingFragment"
+        android:label="Rating"
+        tools:layout="@layout/fragment_rating"/>
+
+</navigation>

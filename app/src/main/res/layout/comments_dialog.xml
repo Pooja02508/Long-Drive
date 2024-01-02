@@ -1,0 +1,112 @@
+<!-- res/layout/dialog_fare.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:layout_gravity="center"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/layout_bg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chat"
+            android:layout_centerVertical="true"/>
+
+
+        <EditText
+            android:id="@+id/optionsComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Options and comments"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:paddingLeft="15dp"
+            android:layout_toEndOf="@id/options"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_freight"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:layout_toEndOf="@id/pass"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/passenger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textSize="16dp"
+                android:hint="More than 4 passengers"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/black"/>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/passSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:textColor="#2196F3"
+        android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/doneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textColor="#2196F3"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
